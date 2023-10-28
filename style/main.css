@@ -78,7 +78,6 @@ header .container-nav {
   margin: 7.375rem 11.5rem;
   font-size: 1.975rem;
   font-weight: 800;
-  
 }
 
 .form-destino {
@@ -185,4 +184,66 @@ footer {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
+}
+
+/* Header */
+@media screen and (max-width: 1020px) {
+  ul li,
+  .buttom-login {
+    display: none;
+  }
+  nav.container-nav {
+    justify-content: center;
+    align-items: center;
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+  }
+  .search h3 {
+    position: relative;
+    text-align: center;
+    right: 6px;
+  }
+
+  .search h1 {
+    text-align: center;
+  }
+  .form-destino {
+    justify-content: center;
+    align-items: center;
+  }
+  .form-destino form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8rem;
+  }
+
+  .form-destino .destino input {
+    border: 1px solid rgb(189, 185, 185);
+    border-radius: 20px;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+
+    font-size: 20px;
+  }
+  .destination-container {
+    flex-direction: column;
+  }
+
+  footer {
+    width: 100%;
+    min-height: 60%;
+    margin: 100px auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
 }
